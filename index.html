@@ -1,23 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                fontFamily: {
+                    manrope: ['"Manrope"', "sans-serif"],
+                },
+                screens: {
+                    xs: '320px',
+                    sm: '360px',
+                    lsm: '425px',
+                    md: '768px',
+                    lg: '1024px',
+                    xl: '1280px',
+                    '2xl': '1536px',
+                     
+                },
+                extend: {
+
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
-<body>
-      <h1>hello world</h1>
+
+<body class="font-manrope">
+
+    <!-- header section  -->
+    <section class="bg-[#f6f6f6] h-screen">
+        <header class="w-10/12 mx-auto">
+            <nav class="flex justify-between items-center py-7">
+                <div>
+                    <h3 class="text-3xl font-bold"> <i
+                            class='bx bg-[#ABEF5F] rounded-full bx-right-arrow-alt origin-center rotate-[315deg]'></i>
+                        Rinterio</h3>
+                </div>
+                <div class="sm:hidden lg:block">
+                    <a href="#" class="mr-7 font-bold text-[#494949]">Home</a>
+                    <a href="#" class="mr-7  text-[#737373]">Service</a>
+                    <a href="#" class="mr-7  text-[#737373]">Profile</a>
+                    <a href="#" class="mr-7  text-[#737373]">Blogs</a>
+                    <a href="#" class="mr-7  text-[#737373]">Contact Us</a>
+                </div>
+                <div class="sm:hidden lg:block">
+
+                    <i
+                        class='bx text-[1.2rem] bg-white p-2 text-[#737373] mr-3 rounded-full bx-search border-[1px] border-[#E9E9E9]'></i>
+                    <i
+                        class='bx text-[1.2rem] bg-white p-2 text-[#737373] mr-3 rounded-full bx-cart border-[1px] border-[#E9E9E9]'></i>
+
+
+                    <button class="bg-[#ABEF5F] px-4 text-[1.2rem] font-bold rounded-full py-1">Book Consult <i
+                            class='bx bg-[#000000] text-[#ABEF5F] rounded-full bx-right-arrow-alt origin-center rotate-[315deg]'></i></button>
+                </div>
+                <div class="lg:hidden sm:block md:hidden">
+                    <i
+                        class='bx text-[1.5rem] bg-white p-2 text-[#737373] mr-3 rounded-full bx-menu border-[1px] border-[#E9E9E9]'></i>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+
+
+    <main></main>
+    <footer></footer>
 </body>
+
 </html>
